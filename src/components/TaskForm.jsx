@@ -1,4 +1,4 @@
-const TaskForm = ({ onEnterTask }) => {
+const TaskForm = ({ onEnterTask, id }) => {
   const handleClick = (event) => {
     console.log("you clicked");
 

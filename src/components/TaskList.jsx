@@ -1,14 +1,17 @@
+import Edit from "./edit";
 const TaskList = ({ taskList }) => {
   return (
     <>
       <ul>
-        {taskList.map((task, index) => {
+        {taskList.map((task) => {
           return (
-            <li key={index}>
-              <span>{task}</span>
-              <button>edit</button>
-              <button> delete</button>
-            </li>
+            <div>
+              <li key={task}>
+                <span>
+                  <Edit title={task} />
+                </span>
+              </li>
+            </div>
           );
         })}
       </ul>
